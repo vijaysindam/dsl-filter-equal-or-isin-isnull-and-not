@@ -135,6 +135,13 @@ val nsndf = df.filter(!(col("id").isNull))
 
 nsndf.show()
 
+println
+  println("====10.show product like Gymnastics=====")
+  println
+
+val fdf = df.filter(col("product") like "%Gymnastics%")
+         
+    fdf.show()
 
 
 
